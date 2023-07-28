@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    margin: 0;
+    height: 100%;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  header {
+    background-color: rgb(199, 197, 197);
+    margin-bottom: 40px;
+    width: 80%;
+    border: 0;
+    border-radius: 20px;
+    margin-left: 10%;
+    margin-top: 10px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav .navImage {
+    margin-left: 10%;
+  }
+  
+  nav .searchBox {
+    margin-right: 36.5%;
+  }
+  
+  .searchBox {
+    display: flex;
+    align-items: center;
+  }
+  
+  nav img {
+    width: 100px;
+    border-radius: 20px;
+  }
+  
+  .search {
+    margin: 50px;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    height: 30px;
+    border: 0;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    padding: 20px 30px;
+    font-weight: bold;
+  
+    /* outline-color: black; */
+  }
+  
+  .search:focus {
+    outline: solid;
+    outline-color: black;
+  }
+  
+  .search:focus::placeholder {
+    color: transparent;
+  }
+  
+  .search::placeholder {
+    color: black;
+  }
+  
+  .searchIcon {
+    background-image: url(https://cdn-icons-png.flaticon.com/128/149/149852.png);
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0;
+    outline: 0;
+    border-radius: 4px;
+    padding: 2px;
+  }
+  
+  .searchIcon:hover {
+    box-shadow: 0px 0px 9px 8px rgba(0, 0, 0, 0.36);
+    cursor: pointer;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: rgb(176, 186, 196, 0.4); */
+    overflow: auto;
+    margin: 0;
+    height: 800px;
+    justify-content: center;
+    width: 80%;
+    border: 0;
+    border-radius: 20px;
+    margin-left: 10%;
+  }
+  
+  .firstContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    justify-content: space-around;
+    width: 400px;
+    height: 400px;
+    background-color: rgb(254, 254, 254);
+    border: 0;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 9px 8px rgba(0, 0, 0, 0.36);
+  }
+  
+  .top {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif,
+      "Gill Sans";
+  }
+  
+  .mid {
+    font-size: 1.8rem;
+    margin: 0;
+  }
+  
+  .low {
+    text-align: center;
+    font-size: 1rem;
+    margin: 0;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif,
+      "Gill Sans";
+  }
+  
+  .icon-top {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+  }
+  
