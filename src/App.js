@@ -8,7 +8,7 @@ const Weather = () => {
 console.log(post)
 const currDate = new Date().toLocaleDateString();
 const currTime = new Date().toLocaleTimeString();
-const Icon = (currTime === "18:00:00 PM") ? <img class="icon-top" src="/moon.png" alt="weatherIcon"/> :
+const Icon = (currTime <= "18:00:00 PM") ? <img class="icon-top" src="/moon.png" alt="weatherIcon"/> :
 <img class="icon-top" src="https://cdn-icons-png.flaticon.com/128/3073/3073665.png" alt="weatherIcon"/>
 
 console.log(currTime)
@@ -50,7 +50,7 @@ console.log(currTime)
     </nav>
   </header>
   <main style={{
-      backgroundImage: currTime === "18:00:00 PM" ? 'url("/night1.jpg")' : 'url("/sun.jpeg")',
+      backgroundImage: currTime <= "18:00:00 PM" ? 'url("/night1.jpg")' : 'url("/sun.jpeg")',
       // Other styles can be added here as well
     }}>
       {/* Display the fetched data if available */}
